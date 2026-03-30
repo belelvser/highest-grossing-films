@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database / generated files
+*.sqlite
+*.db
+
+# Optional generated data
+data/raw_data.csv
