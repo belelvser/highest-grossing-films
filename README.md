@@ -67,6 +67,7 @@ Main fields:
 - `director`
 - `box_office`
 - `country`
+- `image`
 
 ## Web Page Features
 
@@ -106,7 +107,7 @@ notebook/dwav_assignment.ipynb
 
 ### 4. Open the web page
 
-You can open `docs/index.html` in the browser, or use a local server.
+You can open `https://belelvser.github.io/highest-grossing-films/` in the browser, or use a local server.
 
 Example with Python:
 
