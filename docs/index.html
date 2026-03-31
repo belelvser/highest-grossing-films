@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Highest-Grossing Films</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg bg-1"></div>
+  <div class="bg bg-2"></div>
+
+  <main class="page">
+    <a
+      class="ad-banner"
+      href="http://www.kremlin.ru/acts/bank/52994"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Open the official law text"
+    >
+      <img src="azino-banner.png" alt="Banner" />
+    </a>
+
+    <header class="header">
+      <div class="header-title">
+        <h1>Highest-Grossing Films</h1>
+        <p>Interactive gallery based on the Wikipedia dataset</p>
+      </div>
+
+      <div class="header-buttons">
+        <button id="randomBtn">Random film</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </header>
+
+    <section class="toolbar">
+      <div class="field">
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="text" placeholder="Film title or director" />
+      </div>
+
+      <div class="field">
+        <label for="countryFilter">Country</label>
+        <select id="countryFilter">
+          <option value="all">All countries</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="yearFilter">Minimum year</label>
+        <select id="yearFilter">
+          <option value="all">Any year</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="sortSelect">Sort by</label>
+        <select id="sortSelect">
+          <option value="gross_desc">Box office ↓</option>
+          <option value="gross_asc">Box office ↑</option>
+          <option value="year_desc">Year ↓</option>
+          <option value="year_asc">Year ↑</option>
+          <option value="title_asc">Title A–Z</option>
+          <option value="title_desc">Title Z–A</option>
+        </select>
+      </div>
+
+      <label class="checkbox">
+        <input id="billionOnly" type="checkbox" />
+        <span>Only $1B+ films</span>
+      </label>
+    </section>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="grid" id="filmGrid"></section>
+  </main>
+
+  <div class="modal hidden" id="filmModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-layout">
+        <div class="modal-poster-wrap">
+          <img id="modalPoster" class="modal-poster" alt="" />
+        </div>
+        <div class="modal-content">
+          <p class="year-pill" id="modalYear"></p>
+          <h2 id="modalTitle"></h2>
+
+          <div class="meta">
+            <div class="meta-item">
+              <span class="meta-label">Director</span>
+              <span id="modalDirector"></span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Box office</span>
+              <span id="modalRevenue"></span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Country</span>
+              <span id="modalCountry"></span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Release year</span>
+              <span id="modalYear2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
