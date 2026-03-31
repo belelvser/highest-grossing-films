@@ -21,17 +21,13 @@ highest-grossing-films/
 │   ├── films.db
 │   └── films.json
 │
-├── notebook/
-│   └── dwav_assignment.ipynb
+└── dwav_assignment.ipynb
 │
 ├── docs/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
 │   └── films.json
-│
-├── report/
-│   └── report.md
 │
 ├── README.md
 └── requirements.txt
